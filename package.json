@@ -1,0 +1,24 @@
+{
+  "name": "my-blog-app",
+  "version": "1.0.0",
+  "description": "Unified blog application with React frontend and Express backend",
+  "main": "Blog/app.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix frontend run dev\" \"npm --prefix Blog start\"",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "backend:dev": "npm --prefix Blog start",
+    "frontend:build": "npm --prefix frontend run build",
+    "build": "npm --prefix frontend run build && npm --prefix Blog run build",
+    "start": "node Blog/app.js",
+    "lint": "npm --prefix frontend run lint && npm --prefix Blog run lint"
+  },
+  "author": "Abdulhameed",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
