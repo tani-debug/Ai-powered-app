@@ -8,10 +8,7 @@
     "dev": "concurrently \"npm --prefix frontend run dev\" \"npm --prefix Blog start\"",
     "frontend:dev": "npm --prefix frontend run dev",
     "backend:dev": "npm --prefix Blog start",
-    "frontend:build": "npm --prefix frontend run build",
-    "build": "npm --prefix frontend run build && npm --prefix Blog run build",
-    "start": "node Blog/app.js",
-    "lint": "npm --prefix frontend run lint && npm --prefix Blog run lint"
+    "start": "node Blog/app.js"
   },
   "author": "Abdulhameed",
   "license": "ISC",
